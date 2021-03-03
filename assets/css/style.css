@@ -4,10 +4,10 @@
 }
 #start-prompt{
     text-align: center;
-}    /* add bold */
+}    
 #timer{
     position: fixed;
     top: 0;
     right: 0;
-    padding: 40px;
+    padding: 20px;
 }
