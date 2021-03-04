@@ -44,9 +44,9 @@ $questionOptions.addEventListener("click", function (e) {
     }
 });
 
-var questions = [
+var questionsPrompt = [
     {
-        question: "What is the name of Han Solo’s ship?",
+        questionText: "What is the name of Han Solo’s ship?",
         A: "Millennium Falcon",
         B: "Flagship",
         C: "Empire Ship",
@@ -54,7 +54,7 @@ var questions = [
         Answer: "A" 
     },
     {
-        question: "In what month were all six original Star Wars films released?",
+        questionText: "In what month were all six original Star Wars films released?",
         A: "March",
         B: "June",
         C: "July",
@@ -62,7 +62,7 @@ var questions = [
         Answer: "D" 
     },
     {
-        question: "Which Star Wars character is partially named after director George Lucas’ son?",
+        questionText: "Which Star Wars character is partially named after director George Lucas’ son?",
         A: "Rick olie",
         B: "Willrow Hood",
         C: "Dexter Jettster",
@@ -70,7 +70,7 @@ var questions = [
         Answer: "C" 
     },
     {
-        question: "Which species stole the plans to the Death Star?",
+        questionText: "Which species stole the plans to the Death Star?",
         A: "Sullustan",
         B: "Bothan",
         C: "Rakata",
@@ -78,7 +78,7 @@ var questions = [
         Answer: "B" 
     },
     {
-        question: "How many languages is C-3PO fluent in?",
+        questionText: "How many languages is C-3PO fluent in?",
         A: "Over eight million",
         B: "Over seven million",
         C: "Over six million",
