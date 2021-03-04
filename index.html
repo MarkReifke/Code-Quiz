@@ -10,16 +10,31 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
+        <div class="hide" id="score">0</div>
         <div class="container">
-        <div id="start-prompt">
+        <div class="text-center" id="start-prompt">
             <h1>Press Start To Take The Quiz</h1>
-            <button id="start">Start!</button>
+            <button id="startbtn">Start!</button>
         </div>
-        <div id="question-container">
-            <h2 id="question-text"></h2>
-            <div id="answers"></div>
+        <div id="question-prompt"></div>
+        <div class="choiceContainer">
+            <p class="choiceText" data-number="A">Choice A</p>
         </div>
-        <div id="timer"></div>
+        <div class="choiceContainer">
+            <p class="choiceText" data-number="B">Choice B</p>
+        </div>
+        <div class="choiceContainer">
+            <p class="choiceText" data-number="C">Choice C</p>
+        </div>
+        <div class="choiceContainer">
+            <p class="choiceText" data-number="D">Choice D</p>
+        </div>
+        <div class="high-score-box">
+            High Score
+        </div>
+        </div>
+        <div class="hide" id="correctAnswer"></div>
+        <div class="hide" id="timer">200</div>
     </div>
     <script src="./assets/js/script.js"></script>   
     </body>
