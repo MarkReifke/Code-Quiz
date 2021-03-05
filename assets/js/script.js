@@ -1,20 +1,21 @@
-var $startBtn = document.querySelector("#startbtn");
-var $statPrompt = document.querySelector("#start-prompt");
-var $questionPrompt = document.querySelector("#question-prompt")
+var $startBtn = document.querySelector("#startBtn");
+var $startPrompt = document.querySelector("#startPrompt");
+var $questionPrompt = document.querySelector("#questionPrompt")
 var $timer = document.querySelector("#timer");
-var $questionText = document.querySelector("#question-Text");
+var $questionText = document.querySelector(".questionText");
 var $answer = document.querySelector("#answer");
-var $questionOptions = document.querySelector("#options")
+var $questionOptions = document.querySelector(".options")
+var $highScoreBtn = document.querySelector("#highScoreBtn")
 var time = 200;
 
 var timerInterval;
 var currentQuestion = 0;
 
 $startBtn.addEventListener("click", function (e) {
-    $statPrompt.classList.add("hide");
+    $startPrompt.classList.add("hide");
     $questionPrompt.classList.remove("hide");
     $timer.classList.remove("hide");
-}
+})
 
 function renderQuestion() {
     $questionOptions.innerHTML = "";
@@ -44,7 +45,7 @@ $questionOptions.addEventListener("click", function (e) {
     }
 });
 
-var questionsPrompt = [
+var questionList = [
     {
         questionText: "What is the name of Han Solo’s ship?",
         A: "Millennium Falcon",
@@ -98,12 +99,12 @@ $startBtn.addEventListener("click", function (e) {
         $timer.textContent = time;          
 }, 2000); 
 
-$start.style.display = "none";
+$startBtn.style.display = "none";
 
-$questionText.textContent = question[0].text;
 
-$questionText.textContent = question[0].text;
-question[0].answers.forEach(function(item){
+
+$questionText.textContent = $questionPrompt[0].questionText;
+$questionPrompt[0].answers.forEach(function(item){
     var $answerBtn = document.createElement("button");
     $answerBtn.textContent = item;
     $answerBtn.addEventListener("click", handleAnswerClick);
@@ -111,5 +112,4 @@ question[0].answers.forEach(function(item){
 
 });
 
-
-
+})
