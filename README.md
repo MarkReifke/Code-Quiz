@@ -1,6 +1,8 @@
 # Code-Quiz
 <p>I know I am missing some Criteria's but I had a hard time getting help from staff so I had to go to my Brother-In-Law who has been doing this for 10+ years for help and he wasnt able to help me till late tonight (03/04/21) and couldnt help me to long. So I got what I could done with the help I could get because I couldnt get it anywhere else and was having a hard time with JS. So this is the best I could do right now so yeah...
-</p font-size 45px>
+</p> @settings {
+    font-size 100;
+}
 04 Web APIs: Code Quiz
 
 Your Task
